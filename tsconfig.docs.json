@@ -1,0 +1,28 @@
+{
+  "extends": "tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "dist"
+  ],
+  "typedocOptions": {
+    "name": "@esl/utility",
+    "ignoreCompilerErrors": true,
+    "hideGenerator": true,
+    "includeDeclarations": false,
+    "excludeExternals": true,
+    "excludePrivate": true,
+    "externalPattern": "**/+(node_modules|tests)/**/*.ts",
+    "mode": "file",
+    "module": "commonjs",
+    "tsconfig": "tsconfig.app.ts"
+  },
+  "filesGlob": [
+    "src/**/*.ts",
+    "league/**/*.ts"
+  ]
+}
