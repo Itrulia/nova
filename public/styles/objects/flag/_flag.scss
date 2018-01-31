@@ -1,0 +1,33 @@
+.o-flag {
+    display: flex;
+    align-items: center;
+}
+
+.o-flag--fit {
+    display: inline-flex;
+}
+
+.o-flag__figure {
+    margin-right: 1em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1;
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.o-flag__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+
+    + .o-flag__figure {
+        margin-left: 1em;
+        margin-right: 0;
+    }
+}

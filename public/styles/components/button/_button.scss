@@ -1,0 +1,70 @@
+.c-button {
+  font-size: 0.86em;
+  border-radius: 2px;
+  padding: 0.5em 1.5em;
+  user-select: none;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+
+  &[disabled],
+  .is-disabled {
+    cursor: not-allowed;
+    // background-color: $play-color-saturated-accent;
+    // color: $play-color-saturated-text;
+  }
+}
+
+.c-button__loading-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: initial;
+  height: 100%;
+}
+
+.c-button__text--loading {
+  opacity: 0;
+}
+
+/* Size modifiers
+   ========================================================================== */
+
+.c-button--gigantic {
+  font-size: 1.25em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.c-button--huge {
+  font-size: 1em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.c-button--big {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.c-button--petite {
+  padding: 0.5em;
+}
+
+.c-button--skinny {
+  padding: 0.25em;
+}
+
+.c-button--block {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+<div class="c-stat-bar">
+    <span class="c-stat-bar__value">{{ value }}</span>
+    <span class="c-stat-bar__hint">{{ description }}</span>
+
+    <div class="c-stat-bar__bar" [ngClass]="classList">
+        <nova-progress-bar [percent]="percent"></nova-progress-bar>
+    </div>
+
+    <div class="c-stat-bar__hint c-stat-bar__name">
+        {{ name }}
+    </div>
+</div>

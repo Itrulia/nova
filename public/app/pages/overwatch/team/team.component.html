@@ -1,0 +1,113 @@
+<div class="o-grid">
+    <div class="o-grid__item u-1/3" *ngFor="let player of team">
+        <nova-card>
+            <nova-card-header>
+                <div class="o-flag">
+                    <div class="o-flag__figure">
+                        <nova-square-image
+                            [style.width.px]="50"
+                            src="https://cdn-images-1.medium.com/fit/c/200/200/0*I2vo85Flgd4kJCOx.jpeg"
+                            alt="Picture of Tripp (Gigantic)"
+                            title="Assassin"
+                        ></nova-square-image>
+                    </div>
+
+                    <div class="o-flag__body">
+                        <div><strong>{{ player.name }}</strong></div>
+                        <div>{{ player.role }}</div>
+                    </div>
+
+                    <div class="o-flag__body">
+                        <nova-primary-stat [description]="'eliminations'">15</nova-primary-stat>
+                        <!-- <nova-primary-stat [description]="'kills'">15</nova-primary-stat> -->
+                        <!-- <nova-primary-stat [description]="'deaths'">15</nova-primary-stat> -->
+                    </div>
+                </div>
+            </nova-card-header>
+
+            <nova-card-section>
+                <div class="o-grid o-grid--spread">
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="1.47"
+                            [name]="'eliminations'"
+                            [description]="'/min'"
+                            [percent]="50"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="1.44"
+                            [name]="'K/D'"
+                            [percent]="50"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="'55%'"
+                            [name]="'Accuracy'"
+                            [percent]="50"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="5.3"
+                            [name]="'crits'"
+                            [percent]="50"
+                            [description]="'/min'"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="500"
+                            [name]="'dmg'"
+                            [percent]="50"
+                            [description]="'/min'"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="500"
+                            [name]="'heal'"
+                            [percent]="50"
+                            [description]="'/min'"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="33"
+                            [name]="'obj. time'"
+                            [percent]="50"
+                            [description]="'seconds'"
+                        ></nova-stat-bar>
+                    </div>
+
+                    <div class="o-grid__item u-1/4">
+                        <nova-stat-bar
+                            [value]="1.1"
+                            [name]="'Obj. kills'"
+                            [percent]="50"
+                            [description]="'/min'"
+                        ></nova-stat-bar>
+                    </div>
+                </div>
+            </nova-card-section>
+
+            <nova-card-footer>
+                <nova-flat-button>
+                    Hello
+                </nova-flat-button>
+
+                <nova-raised-button>
+                    Hello
+                </nova-raised-button>
+            </nova-card-footer>
+        </nova-card>
+    </div>
+</div>

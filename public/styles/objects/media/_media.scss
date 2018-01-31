@@ -1,0 +1,33 @@
+.o-media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.o-media--fit {
+    display: inline-flex;
+}
+
+.o-media__figure {
+    margin-right: 1em;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 1;
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.o-media__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+
+    + .o-media__figure {
+        margin-left: 1em;
+        margin-right: 0;
+    }
+}

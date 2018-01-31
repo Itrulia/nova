@@ -1,0 +1,19 @@
+$nova-card-background-color: #fff;
+$nova-card-color: #333;
+
+$nova-color-primary: #3c91e6;
+
+$nova-color-saturated: #e7e7e9;
+$nova-color-saturated-accent: #e7e7e9;
+$nova-color-saturated-text: #818f8f;
+
+:root {
+    --nova-background-color-card: $nova-card-background-color;
+    --nova-color-card: $nova-card-color;
+
+    --nova-color-primary: $nova-color-primary;
+
+    --nova-color-saturated: $nova-color-saturated;
+    --nova-color-saturated-accent: $nova-color-saturated-accent;
+    --nova-color-saturated-text: $nova-color-saturated-text;
+}
