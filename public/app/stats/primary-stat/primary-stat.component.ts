@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation, ChangeDetectionStrategy, Input} from "@angular/core";
-import {InheritClassComponent} from "../inherit-class.component";
+import {InheritClassComponent} from "../../general/inherit-class.component";
 
 @Component({
     selector: "nova-primary-stat",

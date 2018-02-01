@@ -8,6 +8,7 @@ import {GeneralComponent} from "./components/general/general.component";
 import {CardsModule} from "../cards/cards.module";
 import {GeneralModule} from "../general/general.module";
 import { TeamComponent } from './overwatch/team/team.component';
+import {StatsModule} from "../stats/stats.module";
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { TeamComponent } from './overwatch/team/team.component';
     ]),
 
     CardsModule,
+    StatsModule,
     GeneralModule
   ],
   declarations: [

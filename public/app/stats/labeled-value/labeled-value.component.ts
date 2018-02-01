@@ -1,4 +1,5 @@
 import {Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, Input} from "@angular/core";
+import {InheritClassComponent} from "../../general/inherit-class.component";
 
 @Component({
     selector: 'nova-labeled-value',
@@ -7,7 +8,7 @@ import {Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy, Input} fr
     encapsulation: ViewEncapsulation.Emulated,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LabeledValueComponent {
+export class LabeledValueComponent extends InheritClassComponent {
     @Input()
     public label: string;
 }
