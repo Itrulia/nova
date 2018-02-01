@@ -1,0 +1,14 @@
+<div class="c-completed-match">
+    <div class="o-flag c-completed-match__participant" *ngFor="let participant of participants">
+        <div class="o-flag__body">
+            <nova-match-participant
+                [name]="participant.name"
+                [logo]="participant.logo"
+            ></nova-match-participant>
+        </div>
+
+        <div class="o-flag__figure c-completed-match__score" [ngClass]="{'c-completed-match__score--win': participant.winner}">
+            {{ participant.score }}
+        </div>
+    </div>
+</div>

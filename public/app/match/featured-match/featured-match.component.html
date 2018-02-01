@@ -1,0 +1,21 @@
+<div class="c-featured-match o-flag">
+    <div class="c-featured-match__participant o-flag__figure" *ngIf="participants[0] as participant">
+        <nova-square-image
+            [src]="participant.logo"
+            [alt]="participant.name + '\'s Logo'"
+            [title]="participant.name + '\'s Logo'"
+        ></nova-square-image>
+    </div>
+
+    <div class="c-featured-match__versus o-flag__body">
+        vs
+    </div>
+
+    <div class="c-featured-match__participant o-flag__figure" *ngIf="participants[1] as participant">
+        <nova-square-image
+            [src]="participant.logo"
+            [alt]="participant.name + '\'s Logo'"
+            [title]="participant.name + '\'s Logo'"
+        ></nova-square-image>
+    </div>
+</div>

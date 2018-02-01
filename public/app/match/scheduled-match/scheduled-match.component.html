@@ -1,0 +1,16 @@
+<div class="c-scheduled-match">
+    <div class="o-flag">
+        <div class="o-flag__body">
+            <nova-match-participant
+                *ngFor="let participant of participants"
+                class="c-scheduled-match__participant"
+                [name]="participant.name"
+                [logo]="participant.logo"
+            ></nova-match-participant>
+        </div>
+
+        <div class="o-flag__figure c-scheduled-match__time">
+            {{ time }}
+        </div>
+    </div>
+</div>

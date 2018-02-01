@@ -1,0 +1,17 @@
+// .c-completed-match {}
+
+.c-completed-match__participant {
+    margin-bottom: 0.75em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-completed-match__score {
+    font-size: 1.35em;
+}
+
+.c-completed-match__score--win {
+    font-weight: bold;
+}

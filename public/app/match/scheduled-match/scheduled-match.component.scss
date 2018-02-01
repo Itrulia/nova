@@ -1,0 +1,14 @@
+// .c-scheduled-match {}
+
+.c-scheduled-match__participant {
+    margin-bottom: 0.75em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-scheduled-match__time {
+    font-size: 2em;
+    font-weight: bold;
+}
