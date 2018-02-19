@@ -4,14 +4,13 @@ import {DOCUMENT} from "@angular/platform-browser";
 @Directive({selector: "[novaCopyToClipboard]"})
 export class CopyToClipboardDirective {
     @Input()
-    public copyToClipboard: string;
+    public novaCopyToClipboard: string;
 
-    constructor( @Inject(DOCUMENT) private dom: Document) {}
+    constructor(@Inject(DOCUMENT) private dom: Document) {}
 
     @HostListener("click", ["$event"])
     public onClick(event: MouseEvent) {
         event.preventDefault();
-        console.log(this.copyToClipboard);
 
         let textarea = null;
         try {
@@ -25,7 +24,7 @@ export class CopyToClipboardDirective {
             textarea.style["pointer-events"] = "none";
             this.dom.body.appendChild(textarea);
 
-            textarea.value = this.copyToClipboard;
+            textarea.value = this.novaCopyToClipboard;
             textarea.select();
 
             this.dom.execCommand("copy");

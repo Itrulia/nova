@@ -1,0 +1,9 @@
+<div class="c-list__section">
+    <div class="c-list__section__header" [ngClass]="{'c-list__section__header--block': blockHeader}">
+        <ng-content select="nova-list-section-header"></ng-content>
+    </div>
+
+    <div class="c-list__section__items">
+        <ng-content select="nova-list-item"></ng-content>
+    </div>
+</div>

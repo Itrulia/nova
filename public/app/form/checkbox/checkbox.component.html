@@ -1,0 +1,20 @@
+<div class="c-checkbox o-flag">
+    <div
+        class="c-checkbox__checkbox o-flag__figure"
+        [ngClass]="{'c-checkbox__checkbox--checked': isChecked}"
+    ></div>
+
+    <div class="c-checkbox__label o-flag__body" [ngClass]="classList">
+        <ng-content></ng-content>
+    </div>
+
+    <label class="c-checkbox__click">
+        <input
+            type="checkbox"
+            class="c-checkbox__input"
+            [(ngModel)]="isChecked"
+            [required]="isRequired"
+            value="1"
+        >
+    </label>
+</div>

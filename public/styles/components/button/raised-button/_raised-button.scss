@@ -1,0 +1,8 @@
+.c-raised-button {
+    background-color: var(--nova-color-primary);
+
+    &[disabled] {
+      background-color: var(--nova-color-saturated-accent);
+      color: var(--nova-color-saturated-text);
+    }
+}

@@ -10,7 +10,7 @@
     "dist"
   ],
   "typedocOptions": {
-    "name": "@esl/utility",
+    "name": "@itrulia/nova",
     "ignoreCompilerErrors": true,
     "hideGenerator": true,
     "includeDeclarations": false,
@@ -22,7 +22,6 @@
     "tsconfig": "tsconfig.app.ts"
   },
   "filesGlob": [
-    "src/**/*.ts",
-    "league/**/*.ts"
+    "src/**/*.ts"
   ]
 }

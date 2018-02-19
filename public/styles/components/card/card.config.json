@@ -1,0 +1,8 @@
+{
+  "context": {
+    "cardTitle": "Card Title",
+    "cardBody": "lorem ipsum",
+
+    "buttonLabel": "Click Me!"
+  }
+}

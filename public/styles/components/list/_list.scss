@@ -1,0 +1,39 @@
+.c-list {}
+
+.c-list__header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.c-list__item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.c-list__section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.c-list__section__header {
+    display: block;
+    position: sticky;
+    top: 0;
+    width: 3.625rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+.c-list__section__header--block {
+    width: 100%;
+}
+
+.c-list__section__items {
+    display: block;
+    flex: 1;
+}
+
+// .c-list__section-header {}

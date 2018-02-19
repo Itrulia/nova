@@ -4,23 +4,24 @@ import {NgModule} from "@angular/core";
 import {AppComponent} from "./app.component";
 import {CardsModule} from "./cards/cards.module";
 import {GeneralModule} from "./general/general.module";
-import {RouterModule, PreloadAllModules} from "@angular/router";
+import {StatsModule} from "./stats/stats.module";
+import {MatchModule} from "./match/match.module";
+import {FormModule} from "./form/form.module";
+import {ListModule} from "./list/list.module";
 
 @NgModule({
     declarations: [
         AppComponent
     ],
     imports: [
-        BrowserModule,
-        RouterModule.forRoot([
-            {
-              path: "",
-              loadChildren: "./pages/pages.module#PagesModule"
-            }
-        ], {preloadingStrategy: PreloadAllModules}),
+        BrowserModule
         // Tests
         CardsModule,
-        GeneralModule
+        StatsModule,
+        GeneralModule,
+        MatchModule,
+        FormModule,
+        ListModule
     ],
     providers: [],
     bootstrap: [

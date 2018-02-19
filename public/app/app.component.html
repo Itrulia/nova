@@ -1,99 +1,51 @@
-<!-- <nova-card>
-    <nova-card-title>
-        Karl Merkli
-    </nova-card-title>
+<nova-list>
+    <nova-list-item>
+        <nova-card>
+            <nova-featured-match
+                [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+                [time]="'21:00'"
+            ></nova-featured-match>
+        </nova-card>
+    </nova-list-item>
+</nova-list>
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae veritatis cupiditate ducimus quia perspiciatis sapiente tenetur cum non voluptates, vel, placeat magnam iste hic, libero culpa minus officiis provident.
-</nova-card>
+<nova-list>
+    <nova-list-header>
+        Upcoming Matches
+    </nova-list-header>
 
-<nova-card>
-    <nova-card-progress [percent]="75"></nova-card-progress>
+    <nova-list-section *ngFor="let section of sections; let i = index" [blockHeader]="false">
+        <nova-list-section-header>
+            Week {{ i+1 }}
+        </nova-list-section-header>
 
-    <nova-card-title>
-        Karl Merkli
-    </nova-card-title>
+        <nova-list-item *ngFor="let item of items; let itemIndex = index">
+            <nova-card>
+                <nova-scheduled-match
+                    [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+                    [time]="'21:00'"
+                ></nova-scheduled-match>
+            </nova-card>
+        </nova-list-item>
+    </nova-list-section>
+</nova-list>
 
-    <div class="o-grid o-grid--spread">
-        <div class="o-grid__item u-1/7">
-            <nova-stat-bar
-                [value]="500"
-                [name]="'name'"
-                [percent]="50"
-                [description]="'/min'"
-            ></nova-stat-bar>
-        </div>
+<nova-list>
+    <nova-list-header>
+        Recent Matches
+    </nova-list-header>
 
-        <div class="o-grid__item u-1/7">
-            <nova-stat-bar
-                [value]="500"
-                [name]="'name'"
-                [percent]="50"
-                [description]="'/min'"
-            ></nova-stat-bar>
-        </div>
+    <nova-list-section *ngFor="let section of sections; let i = index" [blockHeader]="true">
+        <nova-list-section-header>
+            Week {{ i+1 }}
+        </nova-list-section-header>
 
-        <div class="o-grid__item u-1/7">
-            <nova-stat-bar
-                [value]="500"
-                [name]="'name'"
-                [percent]="50"
-                [description]="'/min'"
-            ></nova-stat-bar>
-        </div>
-
-        <div class="o-grid__item u-1/7">
-            <nova-stat-bar
-                [value]="500"
-                [name]="'name'"
-                [percent]="50"
-                [description]="'/min'"
-            ></nova-stat-bar>
-        </div>
-
-        <div class="o-grid__item u-1/7">
-            <nova-stat-bar
-                [value]="500"
-                [name]="'name'"
-                [percent]="50"
-                [description]="'/min'"
-            ></nova-stat-bar>
-        </div>
-    </div>
-</nova-card>
-
-<nova-card>
-    <nova-card-section>
-        <div class="o-flag">
-            <div class="o-flag__figure">
-                <nova-square-image
-                    [style.width.px]="50"
-                    src="https://cdn-images-1.medium.com/fit/c/200/200/0*I2vo85Flgd4kJCOx.jpeg"
-                    alt="Picture of Tripp (Gigantic)"
-                    title="Assassin"
-                ></nova-square-image>
-            </div>
-
-            <div class="o-flag__body">
-                <div><strong>Karl</strong></div>
-                <div>Merkli</div>
-            </div>
-
-            <div class="o-flag__body">
-                <nova-primary-stat [description]="'level'">15</nova-primary-stat>
-            </div>
-        </div>
-    </nova-card-section>
-</nova-card>
-
-<nova-primary-stat [description]="'level'">
-    15
-</nova-primary-stat>
-
-<nova-stat-bar
-    [value]="500"
-    [name]="'name'"
-    [percent]="50"
-    [description]="'description'"
-></nova-stat-bar> -->
-
-<router-outlet></router-outlet>
+        <nova-list-item *ngFor="let item of items; let itemIndex = index">
+            <nova-card>
+                <nova-completed-match
+                    [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png', score: 2, winner: true}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png', score: 1, winner: false}]"
+                ></nova-completed-match>
+            </nova-card>
+        </nova-list-item>
+    </nova-list-section>
+</nova-list>

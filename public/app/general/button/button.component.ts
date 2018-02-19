@@ -1,5 +1,5 @@
 import {InheritClassComponent} from "../inherit-class.component";
-import {Input, Output, EventEmitter, Attribute} from "@angular/core";
+import {Input, Output, EventEmitter} from "@angular/core";
 
 export type ButtonActionType = "submit" | "button";
 
@@ -10,7 +10,7 @@ export abstract class ButtonComponent extends InheritClassComponent{
     @Input("loading")
     public isLoading: boolean;
 
-    @Attribute("type")
+    @Input("type")
     public type: ButtonActionType = "submit";
 
     @Output()

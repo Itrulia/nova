@@ -23,6 +23,7 @@ import {CopyToClipboardDirective} from "./copy-to-clipboard.directive";
     ProgressBarComponent,
     CopyToClipboardDirective,
     SquareImageComponent,
+    LabelComponent,
     FlatButtonComponent,
     RaisedButtonComponent,
   ]
