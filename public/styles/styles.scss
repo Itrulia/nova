@@ -1,28 +1,28 @@
 @import "variables";
 
-@import "objects/flag/flag";
-@import "objects/media/media";
-@import "objects/grid/grid";
-@import "objects/ratio/ratio";
+@import "objects/@flag/flag";
+@import "objects/@media/media";
+@import "objects/@grid/grid";
+@import "objects/@ratio/ratio";
 
-@import "components/media-box/media-box";
-@import "components/list/list";
-@import "components/card/card";
-@import "components/label/label";
-@import "components/progress-bar/progress-bar";
+@import "components/@media-box/media-box";
+@import "components/@list/list";
+@import "components/@card/card";
+@import "components/@label/label";
+@import "components/@progress-bar/progress-bar";
 
 @import "components/button/button";
-@import "components/button/flat-button/flat-button";
-@import "components/button/raised-button/raised-button";
+@import "components/button/@flat-button/flat-button";
+@import "components/button/@raised-button/raised-button";
 
-@import "components/stats/primary-stat/primary-stat";
-@import "components/stats/labeled-value/labeled-value";
-@import "components/stats/stat-bar/stat-bar";
+@import "components/stats/@primary-stat/primary-stat";
+@import "components/stats/@labeled-value/labeled-value";
+@import "components/stats/@stat-bar/stat-bar";
 
-@import "components/match/completed-match/completed-match";
-@import "components/match/featured-match/featured-match";
-@import "components/match/scheduled-match/scheduled-match";
-@import "components/match/match-participant/match-participant";
+@import "components/match/@completed-match/completed-match";
+@import "components/match/@featured-match/featured-match";
+@import "components/match/@scheduled-match/scheduled-match";
+@import "components/match/@match-participant/match-participant";
 
-@import "utility/width/width";
-@import "utility/pull/pull";
+@import "utility/@width/width";
+@import "utility/@pull/pull";

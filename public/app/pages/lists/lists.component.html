@@ -1,0 +1,67 @@
+<article>
+    <h1>Normal List</h1>
+
+    <nova-list>
+        <nova-list-header>
+            Upcoming Matches
+        </nova-list-header>
+
+        <nova-list-item *ngFor="let item of items; let itemIndex = index">
+            <nova-card>
+                <nova-scheduled-match
+                    [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+                    [time]="'21:00'"
+                ></nova-scheduled-match>
+            </nova-card>
+        </nova-list-item>
+    </nova-list>
+</article>
+
+<article>
+    <h1>Sectioned List with Header</h1>
+
+    <nova-list>
+        <nova-list-header>
+            Upcoming Matches
+        </nova-list-header>
+
+        <nova-list-section *ngFor="let section of sections; let i = index" [blockHeader]="false">
+            <nova-list-section-header>
+                Week {{ i+1 }}
+            </nova-list-section-header>
+
+            <nova-list-item *ngFor="let item of items; let itemIndex = index">
+                <nova-card>
+                    <nova-scheduled-match
+                        [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+                        [time]="'21:00'"
+                    ></nova-scheduled-match>
+                </nova-card>
+            </nova-list-item>
+        </nova-list-section>
+    </nova-list>
+</article>
+
+<article>
+    <h1>Sectioned List without Header</h1>
+
+    <nova-list>
+        <nova-list-header>
+            Recent Matches
+        </nova-list-header>
+
+        <nova-list-section *ngFor="let section of sections; let i = index" [blockHeader]="true">
+            <nova-list-section-header>
+                Week {{ i+1 }}
+            </nova-list-section-header>
+
+            <nova-list-item *ngFor="let item of items; let itemIndex = index">
+                <nova-card>
+                    <nova-completed-match
+                        [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png', score: 2, winner: true}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png', score: 1, winner: false}]"
+                    ></nova-completed-match>
+                </nova-card>
+            </nova-list-item>
+        </nova-list-section>
+    </nova-list>
+</article>

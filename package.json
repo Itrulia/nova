@@ -23,6 +23,14 @@
     "prepublishOnly": "npm run build"
   },
   "private": true,
+  "dependencies": {
+    "@frctl/cli": "^2.0.0-beta.4",
+    "@frctl/fractal": "^2.0.0-beta.0",
+    "@frctl/fractal-engine-nunjucks": "^2.0.0-beta.0",
+    "@frctl/inspector": "^2.0.0-beta.0",
+    "@frctl/pages": "^2.0.0-beta.0",
+    "@itrulia/fractal-variant-readme": "^0.1.0"
+  },
   "devDependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/cli": "1.6.3",
@@ -53,6 +61,7 @@
     "karma-junit-reporter": "^1.2.0",
     "karma-mocha-reporter": "^2.2.5",
     "karma-phantomjs-launcher": "^1.0.4",
+    "marked": "^0.3.16",
     "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "puppeteer": "^0.13.0",

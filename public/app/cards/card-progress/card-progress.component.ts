@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation, ChangeDetectionStrategy, Input} from "@angular/core";
+import {InheritClassComponent} from "../../general/inherit-class.component";
 
 @Component({
     selector: 'nova-card-progress',
@@ -7,7 +8,7 @@ import {Component, ViewEncapsulation, ChangeDetectionStrategy, Input} from "@ang
     encapsulation: ViewEncapsulation.Emulated,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardProgressComponent {
+export class CardProgressComponent extends InheritClassComponent {
     @Input()
     public percent: number;
 }

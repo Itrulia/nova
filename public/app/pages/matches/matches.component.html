@@ -1,0 +1,32 @@
+<article>
+    <h1>Featured Match</h1>
+
+    <nova-card>
+        <nova-featured-match
+            [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+            [time]="'21:00'"
+        ></nova-featured-match>
+    </nova-card>
+</article>
+
+<article>
+    <h1>Scheduled Match</h1>
+
+    <nova-card>
+        <nova-scheduled-match
+            [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png'}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png'}]"
+            [time]="'21:00'"
+        ></nova-scheduled-match>
+    </nova-card>
+</article>
+
+
+<article>
+    <h1>Completed Match</h1>
+
+    <nova-card>
+        <nova-completed-match
+            [participants]="[{name: 'Godsent', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Godsent_logo.png', score: 2, winner: true}, {name: 'Fnatic', logo: 'https://upload.wikimedia.org/wikipedia/de/thumb/c/c9/Fnatic_logo.svg/1000px-Fnatic_logo.svg.png', score: 1, winner: false}]"
+        ></nova-completed-match>
+    </nova-card>
+</article>

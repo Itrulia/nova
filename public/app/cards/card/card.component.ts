@@ -1,4 +1,5 @@
 import {Component, ViewEncapsulation, ChangeDetectionStrategy} from "@angular/core";
+import {InheritClassComponent} from "../../general/inherit-class.component";
 
 @Component({
     selector: "nova-card",
@@ -7,4 +8,4 @@ import {Component, ViewEncapsulation, ChangeDetectionStrategy} from "@angular/co
     encapsulation: ViewEncapsulation.Emulated,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardComponent {}
+export class CardComponent extends InheritClassComponent {}

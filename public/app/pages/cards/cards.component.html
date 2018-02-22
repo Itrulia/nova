@@ -1,0 +1,104 @@
+<article>
+    <h1>Card</h1>
+
+    <nova-card>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae veritatis cupiditate ducimus quia perspiciatis sapiente tenetur cum non voluptates, vel, placeat magnam iste hic, libero culpa minus officiis provident.
+    </nova-card>
+</article>
+
+<article>
+    <h1>Card with Title</h1>
+
+    <nova-card>
+        <nova-card-title>
+            Karl Merkli
+        </nova-card-title>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi recusandae veritatis cupiditate ducimus quia perspiciatis sapiente tenetur cum non voluptates, vel, placeat magnam iste hic, libero culpa minus officiis provident.
+    </nova-card>
+</article>
+
+<article>
+    <h1>Card with Progress</h1>
+
+    <nova-card>
+        <nova-card-progress
+            [percent]="75"
+        ></nova-card-progress>
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ex placeat autem molestias quisquam ratione nostrum. Quis doloremque sint quia, eaque eius quaerat. Quidem numquam velit quia. Asperiores, accusamus doloribus.
+    </nova-card>
+</article>
+
+<article>
+    <h1>Card with Progress</h1>
+
+    <nova-card>
+        <nova-card-progress
+            [percent]="75"
+        ></nova-card-progress>
+
+        <nova-card-title>
+            Karl Merkli
+        </nova-card-title>
+
+        <div class="o-grid o-grid--spread">
+            <div class="o-grid__item u-1/4">
+                <nova-stat-bar
+                    [value]="500"
+                    [name]="'name'"
+                    [percent]="50"
+                    [description]="'/min'"
+                ></nova-stat-bar>
+            </div>
+
+            <div class="o-grid__item u-1/4">
+                <nova-stat-bar
+                    [value]="500"
+                    [name]="'name'"
+                    [percent]="50"
+                    [description]="'/min'"
+                ></nova-stat-bar>
+            </div>
+
+            <div class="o-grid__item u-1/4">
+                <nova-stat-bar
+                    [value]="500"
+                    [name]="'name'"
+                    [percent]="50"
+                    [description]="'/min'"
+                ></nova-stat-bar>
+            </div>
+        </div>
+    </nova-card>
+</article>
+
+<article>
+    <h1>Card with Header</h1>
+
+    <nova-card>
+        <nova-card-header>
+            <div class="o-flag">
+                <div class="o-flag__figure">
+                    <nova-square-image
+                        [style.width.px]="50"
+                        src="https://cdn-images-1.medium.com/fit/c/200/200/0*I2vo85Flgd4kJCOx.jpeg"
+                        alt="Picture of Tripp (Gigantic)"
+                        title="Assassin"
+                    ></nova-square-image>
+                </div>
+
+                <div class="o-flag__body">
+                    <div><strong>Karl</strong></div>
+                    <div>Merkli</div>
+                </div>
+
+                <div class="o-flag__body">
+                    <nova-primary-stat [description]="'level'">15</nova-primary-stat>
+                </div>
+            </div>
+        </nova-card-header>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure ducimus ipsa voluptates dignissimos deleniti numquam itaque culpa, eos eveniet ratione ipsam non dolorum ipsum reprehenderit sequi! Esse, numquam facere.
+    </nova-card>
+</article>
