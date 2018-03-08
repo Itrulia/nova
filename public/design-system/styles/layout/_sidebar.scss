@@ -1,0 +1,30 @@
+.c-fractal-sidebar {
+    flex: none;
+    width: 280px;
+    max-height: 100vh;
+    overflow-y: auto;
+    background: #121d2f;
+    color: #c0c5ce;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.c-fractal-sidebar__branding {
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    background-color: #0c121c;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+}
+
+.c-fractal-sidebar__header {
+    padding-left: 1rem;
+    text-transform: uppercase;
+    color: #4191EA;
+    font-size: 0.875rem;
+}

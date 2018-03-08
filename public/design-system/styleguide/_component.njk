@@ -5,55 +5,66 @@ id: 'component-{component.id}'
 {% extends "_layouts/default.njk" %}
 
 {% block content %}
-    {% set numVariants = component.getVariants().length %}
+    <article class="c-fractal-component">
+        <h1 class="c-fractal-page__title">
+            {{ component.label }}
+        </h1>
 
-    <h1 class="page__title">
-        {{ component.label }}
-    </h1>
-
-    {% if component.readme %}
-        <div class="component__readme">
-            {{ component.readme | safe }}
-        </div>
-    {% endif %}
-
-    <p>
-        This component has {{ numVariants }} variant{{ '' if numVariants == 1 else 's' }}.
-    </p>
-
-    {% asyncEach variant in component.getVariants().all() %}
-        <div class="variant">
-            {% set scenario = variant.getScenarios().first() %}
-            {% set html = variant | render(scenario) %}
-
-            <h2 class="variant__title">
-                {{ variant.label }}
-            </h2>
-
-            {% if variant.readme %}
-                <h3 class="variant__sectionTitle">
-                    Description
-                </h3>
-
-                <div class="variant__readme">
-                    {{ variant.readme | safe }}
-                </div>
-            {% endif %}
-
-            <div class="variant__section">
-                <h3 class="variant__sectionTitle">Preview</h3>
-                <div class="variant__preview">
-                    {{ html | safe }}
-                </div>
+        {% if component.readme %}
+            <div class="c-fractal-component__readme">
+                {{ component.readme | safe }}
             </div>
+        {% endif %}
 
-            <div class="variant__section">
-                <h3 class="variant__sectionTitle">HTML</h3>
+        {% if component.variables.length %}
+            <h3 class="c-fractal-component__sectionTitle">
+                Variables
+            </h3>
 
-                <div class="code">
-                    {{ html | beautify | highlight('html') | safe }}
+            {% asyncEach variable in component.variables %}
+                <div class="c-fractal-component__variables">
+                    {{ variable.name }}
+                    {{ variable.comment }}
+                    Value {{ variable.value }}
                 </div>
-            </div>
-        </div>
-    {% endeach %}
+            {% endeach %}
+        {% endif %}
+
+
+        {% asyncEach variant in component.getVariants().all() %}
+            <section class="c-fractal-variant" id="{{ variant.id }}">
+                {% set scenario = variant.getScenarios().first() %}
+                {% set html = variant | render(scenario) %}
+
+                <h2 class="c-fractal-variant__title">
+                    {{ variant.label }}
+                </h2>
+
+                {% if variant.readme %}
+                    <h3 class="c-fractal-variant__sectionTitle">
+                        Description
+                    </h3>
+
+                    <div class="c-fractal-variant__readme">
+                        {{ variant.readme | safe }}
+                    </div>
+                {% endif %}
+
+                <div class="c-fractal-variant__section">
+                    <h3 class="variant__sectionTitle">Preview</h3>
+                    <div class="variant__preview">
+                        {{ html | safe }}
+                    </div>
+                </div>
+
+                <div class="c-fractal-variant__section">
+                    <h3 class="c-fractal-variant__sectionTitle">HTML</h3>
+
+                    <div class="code">
+                        {{ html | beautify | highlight('html') | safe }}
+                    </div>
+                </div>
+            </section>
+        {% endeach %}
+    </article>
 {% endblock %}

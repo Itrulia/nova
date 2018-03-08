@@ -1,0 +1,39 @@
+.c-fractal-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.c-fractal-h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.c-fractal-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.c-fractal-h4 {
+    font-size: 1.0625rem;
+    font-weight: 700;
+}
+
+.c-fractal-h1,
+.c-fractal-h2,
+.c-fractal-h3,
+.c-fractal-h4,
+.c-fractal-h5,
+.c-fractal-h6 {
+    line-height: 1.3;
+    margin-bottom: .5em;
+    margin-top: 1.5em;
+}
+
+.c-fractal-paragraph {
+    max-width: 66ch;
+}
+
+.c-fractal-blockquote {
+    border-left: 4px solid #4191EA;
+    padding: 1rem;
+}

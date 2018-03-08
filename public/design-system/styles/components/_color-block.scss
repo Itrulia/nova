@@ -1,0 +1,24 @@
+.c-fractal-color-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.c-fractal-color-block {
+
+}
+
+.c-fractal-color-block__color {
+    padding-bottom: 100%;
+    margin-bottom: 0.625rem;
+}
+
+.c-fractal-color-block__hex {
+    font-weight: bold;
+}
+
+.c-fractal-color-block__variable {
+    font-family: monospace;
+    font-size: 0.875rem;
+}

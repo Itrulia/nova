@@ -1,0 +1,21 @@
+.c-fractal-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    min-height: 100vh;
+}
+
+.c-fractal-page__title {
+    margin-top: 0;
+}
+
+.c-fractal-page__title--alt {
+    border-bottom: 1px solid #5b616b;
+    padding-bottom: 0.5rem;
+}
+
+.c-fractal-page__lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.7;
+}

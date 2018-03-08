@@ -1,0 +1,31 @@
+.c-fractal-table {
+    overflow-x: scroll;
+}
+
+.c-fractal-table__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.c-fractal-table th {
+    font-weight: bold;
+    text-align: left;
+    padding: 1rem 3rem 1rem 0;
+    border-bottom: 2px solid #3057D5;
+    white-space: nowrap;
+}
+
+.c-fractal-table tr td {
+    font-size: 0.875rem;
+    padding: 1rem 3rem 1rem 0;
+    line-height: 1.25;
+
+    :first-child {
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    :last-child {
+        width: 50%;
+    }
+}

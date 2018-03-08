@@ -1,4 +1,5 @@
 module.exports = {
+    status: "ready",
     variants: [
         {
             id: "primary",

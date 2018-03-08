@@ -1,14 +1,15 @@
+import {RouterModule} from "@angular/router";
 import {BrowserModule} from "@angular/platform-browser";
 import {NgModule} from "@angular/core";
 
 import {AppComponent} from "./app.component";
-import {CardsModule} from "./cards/cards.module";
-import {GeneralModule} from "./general/general.module";
-import {StatsModule} from "./stats/stats.module";
-import {MatchModule} from "./match/match.module";
-import {ListModule} from "./list/list.module";
-import {RouterModule} from "@angular/router";
-import {PagesModule} from "./pages/pages.module";
+import {PagesModule} from "./example-pages/pages.module";
+
+import {CardsModule} from "./components/cards/cards.module";
+import {GeneralModule} from "./components/general/general.module";
+import {StatsModule} from "./components/stats/stats.module";
+import {MatchModule} from "./components/match/match.module";
+import {ListModule} from "./components/list/list.module";
 
 @NgModule({
     declarations: [
